@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deez</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/nav_styles/nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="browser">
+      <nav class="nav">
+        <div class="nav-buttons">
+          <button id="back"><i class="bx bx-left-arrow-alt"></i></button>
+          <button id="forward"><i class="bx bx-right-arrow-alt"></i></button>
+          <button id="refresh"><i class='bx bx-refresh'></i></button>
+          <button id="settings"><i class='bx bx-cog' ></i></button>
+        </div>
+        <div class="nav-url-wrapper">
+          <input
+            id="nav-url"
+            type="text"
+            placeholder="Search Deez or type a URL"
+          />
+          <button id="nav-go"><i class="bx bx-search"></i></button>
+        </div>
+      </nav>
+      <main class="main">
+        <h1>Deez</h1>
+        <h3>A Browser you can Trust</h3>
+        <div class="url-wrapper">
+          <input
+            id="main-url"
+            type="text"
+            placeholder="Search Deez or type a URL"
+          />
+          <button id="main-go"><i class="bx bx-search"></i></button>
+        </div>
+      </main>
+    </div>
+    <webview id="webview" src="https://sjcsouthcompsci.org"></webview>
+    <script src="./scripts/render.js" defer></script>
+  </body>
+</html>

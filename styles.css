@@ -1,0 +1,28 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.browser {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+input {
+    flex-grow: 1;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+webview {
+    flex-grow: 1;
+    width: 100%;
+}
