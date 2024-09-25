@@ -7,6 +7,8 @@ window.onload = () => {
   const backButton = document.getElementById("back");
   const forwardButton = document.getElementById("forward");
   const refreshButton = document.getElementById("refresh");
+  const browser = document.getElementById("browser");
+  const main = document.getElementById("main");
 
   // Helper function to ensure URLs have the correct protocol
   function formatUrl(url) {
@@ -34,12 +36,16 @@ window.onload = () => {
     // Clicking Go Button
     goButton.addEventListener("click", () => {
       navigateToUrl(inputElement.value);
+      main.style.display = "none";
+      browser.style.height = "10vh"
     });
 
     // Pressing Enter key
     inputElement.addEventListener("keydown", (event) => {
       if (event.key === "Enter") {
         navigateToUrl(inputElement.value);
+        main.style.display = "none";
+        browser.style.height = "10vh"
       }
     });
   }
@@ -65,4 +71,6 @@ window.onload = () => {
   webview.addEventListener("did-navigate", (event) => {
     syncInputs(event.url);
   });
+
+  // Function to Collapse the Main Header
 };

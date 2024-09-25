@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deez</title>
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/nav_styles/nav.css">
+    <link rel="stylesheet" href="./src/nav/nav.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,13 +18,13 @@
     />
   </head>
   <body>
-    <div class="browser">
+    <div class="browser" id="browser">
       <nav class="nav">
         <div class="nav-buttons">
           <button id="back"><i class="bx bx-left-arrow-alt"></i></button>
           <button id="forward"><i class="bx bx-right-arrow-alt"></i></button>
-          <button id="refresh"><i class='bx bx-refresh'></i></button>
-          <button id="settings"><i class='bx bx-cog' ></i></button>
+          <button id="refresh"><i class="bx bx-refresh"></i></button>
+          <button id="settings"><i class="bx bx-cog"></i></button>
         </div>
         <div class="nav-url-wrapper">
           <input
@@ -35,16 +35,66 @@
           <button id="nav-go"><i class="bx bx-search"></i></button>
         </div>
       </nav>
-      <main class="main">
-        <h1>Deez</h1>
-        <h3>A Browser you can Trust</h3>
+      <main class="main" id="main">
+        <header class="header-wrapper">
+          <h1>Deez</h1>
+          <h3>A Browser built by a mf who's high as balls rn</h3>
+        </header>
         <div class="url-wrapper">
-          <input
-            id="main-url"
-            type="text"
-            placeholder="Search Deez or type a URL"
-          />
-          <button id="main-go"><i class="bx bx-search"></i></button>
+          <div class="inner-url-wrapper">
+            <input
+              id="main-url"
+              type="text"
+              placeholder="Search Deez or type a URL"
+            />
+            <button id="main-go"><i class="bx bx-search"></i></button>
+          </div>
+        </div>
+        <ul class="social-links">
+          <div class="social-wrapper">
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><i class="bx bxl-youtube"></i
+            ></a>
+            <a href="https://github.com/" target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="bx bxl-facebook-circle"></i></a>
+            <a href="https://www.google.com/" target="_blank"><i class="bx bxl-google"></i></a>
+            <a href="mailto:"><i class="bx bx-envelope"></i></a>
+          </div>
+        </ul>
+
+        <div class="misc">
+          <div class="news-card">
+            <h2 class="news-header">The Daily Deez</h2>
+            <div class="news-info">
+              <h4 class="news-title">
+                BREAKING NEWS: Deez Browser Revolutionizes the Internet
+              </h4>
+              <p class="news-desc">
+                In a groundbreaking move, Deez Browser has launched new features
+                that are set to change the way we browse forever. This deserves
+                fat bong rips
+              </p>
+              <a href="#" class="read-more">Read more...</a>
+            </div>
+          </div>
+          <div>103.4 The Deez</div>
+          <div class="weather-card">
+            <div class="weather-location">Houston, TX</div>
+            <div class="weather-info">
+              <span class="weather-temp">75°F</span>
+              <img
+                class="weather-icon"
+                src="https://openweathermap.org/img/wn/01d.png"
+                alt="Clear sky"
+              />
+            </div>
+            <div class="weather-desc">Clear sky</div>
+          </div>
         </div>
       </main>
     </div>

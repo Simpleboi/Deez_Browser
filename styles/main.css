@@ -11,31 +11,49 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px solid blue;
 }
 
 .main {
-  border: 2px solid red;
   height: 90%;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
-.main h1 {
-  font-weight: lighter;
-  font-size: clamp(24px, 4vw, 60px);
+.main .header-wrapper {
+  width: 100%;
+  height: 30%;
 }
-.main h3 {
+.main .header-wrapper h1 {
+  font-weight: lighter;
+  font-size: clamp(50px, 8vw, 90px);
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.main .header-wrapper h3 {
   font-weight: lighter;
   font-size: clamp(24px, 4vw, 32px);
+  text-align: center;
+  height: 30%;
 }
 .main .url-wrapper {
   position: relative;
-  width: 30vw;
-  height: 7vh;
-  margin-top: 20px;
+  width: 100%;
+  height: 15%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .url-wrapper .inner-url-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 50%;
 }
 .main .url-wrapper input {
   height: 100%;
@@ -46,14 +64,121 @@
 }
 .main .url-wrapper button {
   position: absolute;
-  top: 12px;
-  left: 6px;
+  top: 18px;
+  left: 7px;
   background-color: transparent;
-  border: none;
   cursor: pointer;
+  border: none;
 }
 .main .url-wrapper button i {
   font-size: 24px;
+}
+.main .social-links {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .social-links .social-wrapper {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .social-links .social-wrapper a {
+  font-size: 34px;
+  color: black;
+}
+.main .misc {
+  height: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .misc div {
+  width: 20%;
+  height: 90%;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+.main .misc .news-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ff5722;
+  border-radius: 10px;
+  padding: 10px;
+  color: black;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  background-color: white;
+}
+.main .misc .news-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  height: 15%;
+}
+.main .misc .news-info {
+  padding: 10px;
+  height: 85%;
+  width: 100%;
+}
+.main .misc .news-title {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+.main .misc .news-desc {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.main .misc .read-more {
+  font-size: 14px;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.main .misc .read-more:hover {
+  color: #ffc107;
+}
+.main .misc .weather-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  color: black;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.main .misc .weather-card .weather-location {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.main .misc .weather-card .weather-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.main .misc .weather-card .weather-temp {
+  font-size: 24px;
+  margin-right: 5px;
+}
+.main .misc .weather-card .weather-icon {
+  width: 40px;
+  height: 40px;
+}
+.main .misc .weather-card .weather-desc {
+  font-size: 14px;
+  color: black;
 }
 
 #webview {
