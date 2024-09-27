@@ -96,11 +96,80 @@
   justify-content: space-around;
   align-items: center;
 }
-.main .misc div {
+.main .misc > div {
   width: 20%;
   height: 90%;
-  border: 1px solid red;
+  border: 2px solid black;
   border-radius: 10px;
+}
+.main .misc .radio {
+  display: flex;
+  flex-direction: column;
+}
+.main .misc .radio-card {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 70%;
+  text-align: center;
+}
+.main .misc .radio-card .radio-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+}
+.main .misc .radio-card .radio-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .misc .radio-card .radio-song {
+  font-size: 14px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.main .misc .radio-card .radio-play-pause {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .misc .radio-card .radio-play-pause:hover {
+  background-color: #f1f1f1;
+  color: #1976d2;
+}
+.main .misc .radio-controls {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.main .misc .radio-controls input {
+  height: 30%;
+  color: black;
+}
+.main .misc .radio-controls .radio-controls-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70%;
+}
+.main .misc .radio-controls .radio-controls-wrapper i {
+  font-size: 30px;
 }
 .main .misc .news-card {
   display: flex;
@@ -133,6 +202,7 @@
   font-size: 16px;
   margin: 0 0 10px 0;
   font-weight: bold;
+  position: relative;
 }
 .main .misc .news-desc {
   font-size: 14px;
@@ -157,28 +227,51 @@
   font-family: Arial, sans-serif;
   text-align: center;
 }
-.main .misc .weather-card .weather-location {
+.main .misc .weather-card .weather-wrapper {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 5px;
   width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20%;
+}
+.main .misc .weather-card .weather-wrapper input {
+  width: 85%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.main .misc .weather-card .weather-wrapper button {
+  width: 10%;
+  height: 100%;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
 }
 .main .misc .weather-card .weather-info {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   margin-bottom: 5px;
+  width: 100%;
+  height: 30%;
 }
-.main .misc .weather-card .weather-temp {
-  font-size: 24px;
+.main .misc .weather-card .weather-info .weather-temp {
+  font-size: 30px;
   margin-right: 5px;
 }
-.main .misc .weather-card .weather-icon {
-  width: 40px;
-  height: 40px;
+.main .misc .weather-card .weather-info .weather-icon {
+  width: 50px;
+  height: 50px;
 }
 .main .misc .weather-card .weather-desc {
   font-size: 14px;
   color: black;
+  width: 100%;
+  height: 50%;
+  text-align: center;
 }
 
 #webview {

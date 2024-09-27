@@ -61,8 +61,12 @@
             <a href="https://github.com/" target="_blank"
               ><i class="bx bxl-github"></i
             ></a>
-            <a href="https://www.facebook.com/" target="_blank"><i class="bx bxl-facebook-circle"></i></a>
-            <a href="https://www.google.com/" target="_blank"><i class="bx bxl-google"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="bx bxl-facebook-circle"></i
+            ></a>
+            <a href="https://www.google.com/" target="_blank"
+              ><i class="bx bxl-google"></i
+            ></a>
             <a href="mailto:"><i class="bx bx-envelope"></i></a>
           </div>
         </ul>
@@ -74,6 +78,7 @@
               <h4 class="news-title">
                 BREAKING NEWS: Deez Browser Revolutionizes the Internet
               </h4>
+              <hr />
               <p class="news-desc">
                 In a groundbreaking move, Deez Browser has launched new features
                 that are set to change the way we browse forever. This deserves
@@ -82,18 +87,62 @@
               <a href="#" class="read-more">Read more...</a>
             </div>
           </div>
-          <div>103.4 The Deez</div>
+          <div class="radio">
+            <div class="radio-card">
+              <div class="radio-header">Now Playing on 103.4 The Deez</div>
+              <div class="radio-info">
+                <div class="radio-song">"They not like Deez" - Kendrick LaDeez</div>
+                <button class="radio-play-pause">
+                  <i class="bx bx-play"></i>
+                  <!-- Start with play icon -->
+                </button>
+              </div>
+            </div>
+            <div class="radio-controls">
+              <input
+                type="range"
+                id="music-slider"
+                min="0"
+                max="100"
+                value="0"
+                class="slider"
+              />
+              <div class="radio-controls-wrapper">
+                <div class="radio-menu"><i class="bx bx-menu"></i></div>
+                <div class="radio-left">
+                  <i class="bx bxs-arrow-to-left"></i>
+                </div>
+                <div class="radio-play"><i class="bx bx-play-circle"></i></div>
+                <div class="radio-right">
+                  <i class="bx bx-arrow-to-right"></i>
+                </div>
+                <div class="radio-heard"><i class="bx bx-heart"></i></div>
+              </div>
+            </div>
+          </div>
           <div class="weather-card">
-            <div class="weather-location">Houston, TX</div>
+            <div class="weather-wrapper">
+              <input
+                id="weather-search-input"
+                type="text"
+                placeholder="Search City"
+              />
+              <button id="weather-search"><i class="bx bx-search"></i></button>
+            </div>
             <div class="weather-info">
               <span class="weather-temp">75°F</span>
               <img
                 class="weather-icon"
-                src="https://openweathermap.org/img/wn/01d.png"
+                src="./images/sun-png.png"
                 alt="Clear sky"
               />
             </div>
-            <div class="weather-desc">Clear sky</div>
+            <hr />
+            <p class="weather-desc">
+              Sunny skies in Houston today with clear, bright conditions. Expect
+              warm temperatures in the upper 80s, with a touch of humidity.
+              Perfect for outdoor plans, don't forget the sunscreen!
+            </p>
           </div>
         </div>
       </main>

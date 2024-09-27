@@ -24,7 +24,6 @@ nav .nav-buttons :is(#back, #forward, #settings, #refresh) {
   border: none;
 }
 nav .nav-url-wrapper {
-  border: 1px solid red;
   width: 40%;
   height: 70%;
   position: relative;
@@ -35,4 +34,12 @@ nav .nav-url-wrapper input {
   border-radius: 10px;
   padding: 5px 0px 5px 40px;
   font-size: 16px;
+}
+nav .nav-url-wrapper #nav-go {
+  position: absolute;
+  height: 100%;
+  width: 10%;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
 }/*# sourceMappingURL=nav.css.map */
