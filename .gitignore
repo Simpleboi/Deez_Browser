@@ -10,14 +10,14 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 
-# Environment files (if you have sensitive env variables)
+# Environment files 
 .env
 
 # Build files
 dist/
 build/
 
-# Package lock files (optional)
+# Package lock files 
 package-lock.json
 yarn.lock
 
